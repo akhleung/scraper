@@ -45,7 +45,6 @@ public class Scraper {
 
         try {
             response.type("application/json");
-            response.header("Content-Encoding", "gzip");
             return mapper.writer().writeValueAsString(jobInfos);
         } catch (JsonProcessingException e) {
             System.out.println("Error serializing job info: " + e.getMessage());
