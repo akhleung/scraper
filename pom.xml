@@ -66,31 +66,7 @@
     <build>
         <plugins>
 
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-assembly-plugin</artifactId>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<phase>package</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>single</goal>-->
-                        <!--</goals>-->
-                        <!--<configuration>-->
-                            <!--<archive>-->
-                                <!--<manifest>-->
-                                    <!--<mainClass>-->
-                                        <!--com.jobr.sample.Scraper-->
-                                    <!--</mainClass>-->
-                                <!--</manifest>-->
-                            <!--</archive>-->
-                            <!--<descriptorRefs>-->
-                                <!--<descriptorRef>executable-jar</descriptorRef>-->
-                            <!--</descriptorRefs>-->
-                        <!--</configuration>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
-
+            <!-- plugin for creating an executable uber-jar -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
